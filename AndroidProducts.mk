@@ -6,4 +6,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/custom_violet.mk
+    $(LOCAL_DIR)/infinity_violet.mk

@@ -14,17 +14,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SUPPORTS_QUICK_TAP := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := custom_violet
+PRODUCT_NAME := infinity_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
 PRODUCT_MANUFACTURER := Xiaomi
+
+# Maintainer Name
+INFINITY_MAINTAINER := "Vivek T"
+
+# Whether the device supports Fingerprint On Display
+TARGET_HAS_UDFPS := false
+
+# Whether Including Google Apps
+WITH_GAPPS := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="violet-user 10 QKQ1.190915.002 V12.5.1.0.QFHINXM release-keys" \
